@@ -1,0 +1,159 @@
+/* --- MAIN BACKGROUND --- */
+.root {
+    -fx-background-image: url('images/gym1.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Dark overlay for readability */
+.border-pane {
+    -fx-background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85));
+}
+
+/* --- HEADER --- */
+.header-panel {
+    -fx-background-color: linear-gradient(to right, rgba(39, 174, 96, 0.95), rgba(255, 105, 180, 0.95));
+    -fx-padding: 25;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 15, 0, 0, 5);
+}
+
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 3, 0, 2, 2);
+}
+
+.header-subtitle {
+    -fx-text-fill: rgba(255, 255, 255, 0.95);
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+}
+
+/* --- FORM CARD CONTAINER --- */
+.form-card {
+    -fx-background-color: rgba(255, 255, 255, 0.97);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 25, 0, 0, 10);
+    -fx-padding: 35;
+    -fx-transition: all 0.3s ease;
+}
+
+.form-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(39, 174, 96, 0.4), 30, 0, 0, 12);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* --- LABELS --- */
+.label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-transition: all 0.2s ease;
+}
+
+.label:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-text-fill: #27ae60;
+}
+
+/* --- INPUT FIELDS --- */
+.text-field, .choice-box {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-transition: all 0.3s ease;
+}
+
+.text-field:hover, .choice-box:hover {
+    -fx-border-color: #27ae60;
+    -fx-effect: dropshadow(three-pass-box, rgba(39, 174, 96, 0.3), 8, 0, 0, 2);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.text-field:focused, .choice-box:focused {
+    -fx-border-color: #27ae60;
+    -fx-background-color: rgba(255, 255, 255, 1);
+    -fx-effect: dropshadow(three-pass-box, rgba(39, 174, 96, 0.5), 12, 0, 0, 3);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+/* --- BUTTONS (Base Style) --- */
+.button {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 25;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-text-fill: white;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 4);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+.btn-add {
+    -fx-background-color: #27ae60; /* Green */
+}
+.btn-add:hover { -fx-background-color: #2ecc71; }
+
+.btn-update {
+    -fx-background-color: #f39c12; /* Orange */
+}
+.btn-update:hover { -fx-background-color: #f1c40f; }
+
+.btn-delete {
+    -fx-background-color: #c0392b; /* Red */
+}
+.btn-delete:hover { -fx-background-color: #e74c3c; }
+
+.btn-view {
+    -fx-background-color: #2980b9; /* Blue */
+}
+.btn-view:hover { -fx-background-color: #3498db; }
+
+.btn-exit {
+    -fx-background-color: #7f8c8d; /* Gray */
+}
+.btn-exit:hover { -fx-background-color: #95a5a6; }
+
+/* --- MESSAGES --- */
+.success-message {
+    -fx-text-fill: #27ae60;
+    -fx-background-color: #eafaf1;
+    -fx-padding: 10;
+    -fx-background-radius: 5;
+    -fx-border-color: #27ae60;
+    -fx-border-width: 0 0 0 3; /* Left border only */
+}
+
+.error-message {
+    -fx-text-fill: #c0392b;
+    -fx-background-color: #fdedec;
+    -fx-padding: 10;
+    -fx-background-radius: 5;
+    -fx-border-color: #c0392b;
+    -fx-border-width: 0 0 0 3;
+}
